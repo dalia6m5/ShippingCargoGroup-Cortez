@@ -1,0 +1,790 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "contenido"
+    "pie";
+    height: 100vh;
+}
+/* cabecera-index */
+
+#cabecera-index {
+    grid-area: cabecera;
+   /*  background: #2368AD; */
+    width: 100%;
+    height: 100vh;
+    background-image:url(../imagenes/Banner_header.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#cabecera-index .cabecera-barra-index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5% 5px 5%;
+   /* background-color: #2368AD; */
+   
+}
+
+#cabecera-index .cabecera-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#cabecera-index .cabecera-redes img {
+    width: 30px;
+    margin-top: 15px;
+}
+
+#cabecera-index .cabecera-nav-index ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#cabecera-index .cabecera-nav-index ul li a {
+    margin: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+#cabecera-index .cabecera-nav-index ul li a:hover{
+    margin: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    color: #2368AD;
+}
+
+#cabecera-index .cabecera__logo {
+    margin-top: 10px;  
+}
+
+#cabecera-index .cabecera-título {
+    margin: 7% 5%;
+    color: white;
+}
+
+#cabecera-index .cabecera-título a {
+    text-decoration: none;
+    color: #2368AD;
+    background-color: white;
+    padding: 7px 12px;
+    border-radius: 20px;
+    text-align: center
+}
+
+#cabecera-index .cabecera-título h1 {
+    font-size: 60px;
+    text-align: left;
+}
+
+#cabecera-index .cabecera-título .cabecera-parrafo {
+    font-size: 30px;
+    width: 600px;
+    text-align: left;
+}
+
+#cabecera-index .cabecera-título h1 p {
+    color: #C73930;
+    font-size: 60;
+    display: inline
+}
+
+/* Cabecera-páginas */
+
+#cabecera {
+    grid-area: cabecera;
+}
+
+#cabecera .cabecera-barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5% 5px 5%;
+    background-color: #2368AD;  
+}
+
+#cabecera .cabecera-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#cabecera .cabecera-nav ul li a {
+    margin: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+#cabecera .cabecera-nav ul li a:hover{
+    margin: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    color: #2368AD;
+}
+
+#cabecera .cabecera__logo {
+    margin-top: 10px;  
+}
+
+/* Estilo-main */
+
+#contenido{
+    grid-area: contenido;
+}
+
+#contenido #descripcion {
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 0% 5%;
+    margin-top: 50px;
+    align-items: center;
+    border-bottom: 2px solid #2368AD;
+}
+
+#contenido #descripcion .descripcion-texto {
+    text-align: center;
+    width: 300px;
+    color: #2368AD;
+   
+}
+#contenido #descripcion .descripcion-texto h2 {
+    font-size: 40px;
+}
+
+#contenido #descripcion .descripcion-texto p {
+    font-size: 20px;
+}
+
+#contenido #descripcion .descripcion-img {
+    padding-bottom: 50px;  
+}
+
+#contenido #servicios {
+    /* grid-area: servicios; */
+    background: white;
+    margin: 50px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+#contenido #servicios .servicios-tit {
+    color: #2368AD;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+#contenido #servicios .servicios-iconos {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+}
+
+#contenido #servicios .servicios-iconos .servicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: aliceblue;
+    padding: 20px 5px;
+}
+
+#contenido #servicios .servicios-iconos .servicio h3 {
+    color: #2368AD;
+    font-size: 15px;
+    text-align: center;
+}
+
+#contenido #call-cotiza {
+    /* grid-area: call-cotiza; */
+    display: flex;
+    flex-direction: column;
+    background-color: #2368AD;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 80px;
+}
+
+#contenido #call-cotiza h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#contenido #call-cotiza a {
+    color: #2368AD;
+    background-color: aliceblue;
+    text-decoration: none;
+    padding: 5px 9px;
+    border-radius: 50px;
+}
+
+#contenido #clientes {
+   /*  grid-area: clientes; */
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+#contenido #clientes h2 {
+    color: #2368AD;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#contenido #clientes .citas {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+#contenido #clientes .citas .cita-cliente {
+    padding: 30px 5px 15px 5px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: aliceblue;
+    position: relative;
+}
+
+#contenido #clientes .citas .cita-cliente img {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+
+#contenido #clientes .citas .cita-cliente h4 {
+    font-size: 15px;
+    color: #2368AD;
+    margin-bottom: 5px;
+}
+
+#contenido #clientes .citas .cita-cliente h5 {
+    color: darkgray;
+}
+
+#contenido #clientes .citas .cita-cliente h6 {
+    color: darkgray;
+}
+
+#contenido #ubicacion {
+    /* grid-area: ubicacion; */
+    background: white;
+}
+
+#contenido #titulo-qs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagenes/Imagen-qs.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+   height: 40vh;
+   margin: 50px;
+   
+}
+
+#contenido #titulo-qs h2 {
+    font-size: 60px;
+    color: white;
+   
+}
+
+#contenido #info {
+   /*  grid-area: info; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#contenido #info .descripcion p {
+   max-width: 700px;
+   text-align: justify;
+    font-size: 24px;
+    color: #2368AD;
+}
+
+#contenido #info .mv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 80px;
+    margin: 50px;
+    
+}
+
+#contenido #info .mv .mv-contenido {
+    color: #2368AD;
+}
+
+#contenido #info .mv .mv-contenido h3 {
+    font-size: 40px;
+   
+}
+
+#contenido #info .mv .mv-contenido p {
+    font-size: 25px;
+    text-align: justify;
+}
+
+#contenido #info .mv .vision {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+#contenido #info .mv .mision h3 {
+    text-align: right;
+}
+
+
+#contenido #servicios {
+    margin: 50px;
+   /*  grid-area: servicios; */
+}
+
+#contenido #servicios .tit-servicios {
+    font-size: 40px;
+    color: #2368AD;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#contenido #servicios .servicios-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+#contenido #servicios .servicios-grid .servicio-elemento {
+    display: flex;
+    flex-direction: column;
+    color: #2368AD;
+    background-color: aliceblue;
+    padding: 50px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+#contenido #servicios .servicios-grid .servicio-elemento h3 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+#contenido #servicios .servicios-grid .servicio-elemento p {
+    font-size: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+
+#contenido #servicios .servicios-grid .servicio-elemento img {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    margin-top: 10px;
+} 
+
+#contenido #galeria {
+    /* grid-area: galeria; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 25px;
+}
+
+#contenido #galeria img {
+    width: 100%;
+    height: 600px;
+}
+
+#contenido #cotiza {
+  /*   grid-area: cotiza; */
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: aliceblue;
+    
+}
+
+#contenido #cotiza .cotiza-contenedor {
+    max-width: 700px;
+    /* width: 100%; */
+    background: white;
+    padding: 100px 120px;
+    border-radius: 10px;
+    color: #2368AD;
+} 
+
+#contenido #cotiza .cotiza-contenedor h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#contenido #cotiza .cotiza-contenedor .formulario {
+    display: flex;
+   flex-direction: column;
+}
+
+#contenido #cotiza .cotiza-contenedor .formulario .form-entrada {
+    padding-top: 20px;
+}
+
+#contenido #cotiza .cotiza-contenedor .formulario .form-entrada input {
+    height: 45px;
+    width: 100%; 
+} 
+
+#contenido #cotiza .cotiza-contenedor .formulario .form-entrada .radios {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    position: relative;
+}
+
+#contenido #cotiza .cotiza-contenedor .formulario .form-entrada .radios .radio {
+    height: 15px;
+    width: 100%;
+}
+
+#contenido #cotiza .cotiza-contenedor .formulario .form-entrada .detalles {
+    width: 460px;
+}
+
+/* Estilo-pie */
+
+#pie {
+    grid-area: pie;
+    background: #2368AD;
+     padding: 50px;
+}
+
+#pie .pie-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#pie .pie-contenedor .pie-logo img {
+    width: 250px;
+}
+
+#pie .pie-contenedor .pie-redes img {
+    width: 40px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+#pie .pie-contenedor .pie-contacto {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+#pie .pie-contenedor .pie-contacto .dato {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+
+}
+#pie .pie-contenedor .pie-contacto .dato img {
+    width: 35px;
+}
+
+#pie .pie-contenedor .pie-contacto .dato p {
+    margin-left: 5px;
+}
+
+
+@media (max-width: 1024px) {
+   /* cabecera-index */  
+    #cabecera-index .cabecera-nav-index ul li a {
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    #cabecera-index .cabecera-nav-index ul li a:hover {
+        font-size: 15px;
+    }
+
+/* cabecera-paginas */     
+
+    #cabecera .cabecera-nav ul li a {
+    margin: 20px;
+    font-size: 15px;
+    }
+
+    #cabecera .cabecera-nav ul li a:hover {
+    font-size: 15px;
+    }
+
+/* contenido */
+
+    #contenido #servicios .servicios-iconos {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    #contenido #info .descripcion p {
+        max-width: 500px;
+        font-size: 22px;
+    } 
+
+    #contenido #info .mv {
+        gap: 70px;
+        margin: 45px;    
+    }
+
+    #contenido #info .mv .mv-contenido h3 {
+        font-size: 35px;   
+    }
+    
+    #contenido #info .mv .mv-contenido p {
+        font-size: 23px;    
+    }
+
+    #contenido #servicios .servicios-grid {
+        gap: 45px;
+    }
+    
+    #contenido #servicios .servicios-grid .servicio-elemento {
+        padding: 45px;
+    }
+    
+    #contenido #servicios .servicios-grid .servicio-elemento h3 {
+        font-size: 20px;
+    }
+    
+    #contenido #servicios .servicios-grid .servicio-elemento p {
+        font-size: 17px;
+    }
+    
+    #contenido #servicios .servicios-grid .servicio-elemento img {
+        width: 250px;
+        height: 208px;
+    } 
+
+    #contenido #cotiza .cotiza-contenedor {
+        max-width: 650px;
+        padding: 90px 105px;
+    } 
+    
+    #contenido #cotiza .cotiza-contenedor .formulario .form-entrada .detalles {
+        width: 440px;
+    }
+
+/* Pie */
+
+    #pie .pie-contenedor .pie-redes img {
+        width: 30px;
+        margin-right: 5px;
+        margin-top: 15px;
+    }
+
+    #contenido #galeria img {
+        width: 100%;
+        height: 450px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+/* cabecera-index */    
+    
+    /* .cabecera-título a {
+        text-decoration: none;
+        color: #2368AD;
+        background-color: white;
+        padding: 7px 12px;
+        border-radius: 20px;
+        text-align: center 
+    }*/
+    
+    #cabecera-index .cabecera-barra-index {
+        position: relative;
+        z-index: 2;
+    }
+    
+    #cabecera-index .cabecera-título h1 {
+        font-size: 45px;
+    }
+    #cabecera-index .cabecera-título .cabecera-parrafo {
+        font-size: 24px;
+        width: 400px;
+    }
+    
+    #cabecera-index .cabecera-barra-index {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #cabecera-index .cabecera-título h1 p {
+        font-size: 50;
+    }
+
+    #cabecera-index .cabecera-redes {
+        position: relative;
+        top: -150px;
+    }
+
+    #cabecera-index .cabecera-nav-index ul {
+        flex-direction: column;
+        position: relative;
+        gap: 10px;
+    }
+    
+    #cabecera-index .cabecera-nav-index ul li a.inicio{
+        display: none;
+    }
+
+/* cabecera-paginas */  
+
+    #cabecera .cabecera-barra {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+    #cabecera .cabecera-nav ul {
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    }
+
+    #cabecera .cabecera-nav ul li a.inicio{
+    display: none;
+    }
+
+/* Contenido */
+
+    #contenido #descripcion {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        padding-top: 20px;
+    }
+    
+    #contenido #descripcion .descripcion-img img {
+        width: 350px;
+    }
+     
+    #contenido #servicios .servicios-iconos {
+        grid-template-columns: 1fr; 
+    }
+    
+    #contenido #clientes .citas {
+        grid-template-columns: 1fr; 
+        gap: 25px
+    }
+
+    #contenido #info .descripcion p {
+        max-width: 400px;
+        font-size: 20px;
+    } 
+
+    #contenido #info .mv {
+        gap: 50px;
+        margin: 40px;    
+    }
+    
+    #contenido #info .mv .mv-contenido h3 {
+        font-size: 30px;   
+    }
+    
+    #contenido #info .mv .mv-contenido p {
+        font-size: 20px;
+        
+    }
+
+    #contenido #servicios .tit-servicios {
+        font-size: 25px;
+    }
+    
+    #contenido #servicios .servicios-grid {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    
+    #contenido #servicios .servicios-grid .servicio-elemento {
+        padding: 45px;
+    }
+    
+    #contenido #servicios .servicios-grid .servicio-elemento h3 {
+        font-size: 20px;
+    }
+    
+    #contenido #servicios .servicios-grid .servicio-elemento p {
+        font-size: 17px;
+    }
+    
+    #contenido #servicios .servicios-grid .servicio-elemento img {
+        width: 250px;
+        height: 208px;
+    } 
+
+    #contenido #galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contenido #galeria img {
+        width: 100%;
+        height: 350px;
+    }
+
+    #cotenido #cotiza .cotiza-contenedor {
+        max-width: 450px;
+        padding: 60px 80px;
+    } 
+    
+    #contenido #cotiza .cotiza-contenedor .formulario .form-entrada .detalles {
+        width: 290px;
+    }
+
+/* Pie */
+
+    #pie {
+        padding: 20px;
+    }
+
+    #pie .pie-contenedor {
+        flex-direction: column;
+    }
+
+    #pie .pie-contenedor .pie-redes {
+       display: none;
+   }
+    
+   #pie .pie-contenedor .pie-contacto .dato img {
+    width: 25px;
+   }
+
+   #pie .pie-contenedor .pie-logo img {
+    width: 200px;
+   }
+
+    
+}
