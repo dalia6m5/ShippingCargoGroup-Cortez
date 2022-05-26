@@ -71,6 +71,10 @@
 
 #cabecera-index .cabecera__logo {
     margin-top: 10px;  
+    animation-name: logo-animacion;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+
 }
 
 #cabecera-index .cabecera-título {
@@ -147,6 +151,20 @@
 
 #cabecera .cabecera__logo {
     margin-top: 10px;  
+    animation-name: logo-animacion;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    
+}
+
+@keyframes logo-animacion {
+    0% {
+        transform: translate(-10px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+    
 }
 
 /* Estilo-main */
