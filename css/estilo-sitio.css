@@ -84,7 +84,13 @@
     background-color: white;
     padding: 7px 12px;
     border-radius: 20px;
-    text-align: center
+    text-align: center;
+    transition: color, background-color 500ms;
+}
+
+#cabecera-index .cabecera-título a:hover {
+    color: aliceblue;
+    background-color: #2b80d4;
 }
 
 #cabecera-index .cabecera-título h1 {
@@ -239,7 +245,14 @@
     text-decoration: none;
     padding: 5px 9px;
     border-radius: 50px;
+    transition: color, background-color 500ms;
 }
+
+#contenido #call-cotiza a:hover{
+    color: aliceblue;
+    background-color:#2b80d4 ;
+
+} 
 
 #contenido #clientes {
    /*  grid-area: clientes; */
